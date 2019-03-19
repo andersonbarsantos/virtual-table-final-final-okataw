@@ -1,0 +1,22 @@
+<df-grid style="height: 300px; display: block;" #grid>
+
+  <df-grid-header-row></df-grid-header-row>
+
+  <df-grid-column field="name" title="Name" width="25%"></df-grid-column>
+  <df-grid-column field="company" title="Company" width="25%"></df-grid-column>
+  <df-grid-column field="zipcode" title="Zipcode" width="25%"></df-grid-column>
+  <df-grid-column field="jobType" title="Job Type" width="25%"></df-grid-column>
+  <df-grid-column field="count" title="Count" width="25%"></df-grid-column>
+
+  <mat-progress-bar mode="indeterminate" *ngIf="loading$ | async"></mat-progress-bar>
+  <cdk-virtual-scroll-viewport [itemSize]="45">
+    <df-grid-row
+      *cdkVirtualFor="let row of items$ | async; trackBy: trackByFn;"
+      [row]="row">
+    </df-grid-row>
+  </cdk-virtual-scroll-viewport>
+
+  <df-grid-footer
+    [length]="(items$ | async).length">
+  </df-grid-footer>
+</df-grid>

@@ -1,0 +1,31 @@
+.container {
+  height: 300px;
+  border: solid 1px red;
+  width: 300px;
+}
+.container div {
+  border-bottom: solid 1px grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3, p {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+h3 {
+  height: 35px;
+  text-align: center;
+}
+
+p {
+  height: 24px;
+}
+
+df-grid-header-cell {
+  min-width: 50px !important;
+}

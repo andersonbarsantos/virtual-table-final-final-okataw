@@ -1,0 +1,15 @@
+.df-grid-page-button {
+  min-width: auto;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.df-grid-page-active {
+  font-weight: bold;
+  /deep/ .mat-button-focus-overlay {
+    opacity: 1;
+  }
+}

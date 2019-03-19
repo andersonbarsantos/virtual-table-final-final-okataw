@@ -1,0 +1,24 @@
+:host {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: ew-resize;
+  width: 1px;
+  padding: 0 8px;
+
+  > div {
+    background: #eee;
+    width: 1px;
+    height: 100%;
+  }
+
+  &.df-grid-resize-handle-active,
+  &:hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+  }
+}

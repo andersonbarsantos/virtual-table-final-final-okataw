@@ -1,0 +1,24 @@
+:host {
+  background: #fff;
+
+  /deep/ .cdk-virtual-scroll-viewport {
+    flex: 1;
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  /deep/ .df-grid-empty-row {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 12px;
+  }
+}
+
+.df-grid-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+

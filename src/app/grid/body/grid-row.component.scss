@@ -1,0 +1,33 @@
+:host {
+  color: rgba(0, 0, 0, .87);
+  display: block;
+
+  &.selection-enabled {
+    cursor: pointer;
+  }
+
+  .df-grid-row-container {
+    display: flex;
+    border-bottom: solid 1px rgba(0, 0, 0, .12);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .df-grid-row-container,
+  &:hover .df-grid-row-container {
+    background-color: #eee;
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+  }
+
+  &.selection-selected {
+    .df-grid-row-container {
+      background-color: #304ffe;
+      color: #fff;
+      width: 100%;
+    }
+  }
+}

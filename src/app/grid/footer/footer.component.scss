@@ -1,0 +1,31 @@
+:host {
+  color: rgba(0, 0, 0, .54);
+  border-top: solid 1px rgba(0, 0, 0, 0.12);
+  height: 55px;
+  overflow: hidden;
+}
+
+.df-grid-footer-container {
+  height: 100%;
+  padding: 0 24px;
+  flex-direction: row;
+  display: flex;
+  max-height: 100%;
+  place-content: center flex-start;
+  align-items: center;
+}
+
+.pager-col,
+.total-col {
+  align-items: center;
+}
+
+.total-col {
+  flex: 1 1 100%;
+  max-width: 15%;
+}
+
+.pager-col {
+  text-align: right;
+  flex: 1 1 0%;
+}
